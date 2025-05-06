@@ -1,0 +1,10 @@
+# config/training_config.yaml
+training_config:
+  data_path: "/home/opervu-user/opervu/Tennis_GAIL/ball_data.csv"
+  epochs: 300          # [30*, 100, 200*, 300*]
+  batch_size: 64
+  num_trajectories: 30 # [10*, 20*, 30*]
+  max_episode_length: 100  # [10*, 100*, 300, 500, 700*, 1000*]
+  save_dir: "/home/opervu-user/opervu/Tennis_GAIL/chkpt"
+  save_interval: 100   # Save every 100 epochs
+  lr: 0.00001
