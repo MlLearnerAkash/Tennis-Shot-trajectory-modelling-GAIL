@@ -7,7 +7,7 @@ Tennis-Shot-trajectory-modelling-GALL/
 │   └── dataloader.py               # DataLoader configuration
 ├── notebooks/                      
 ├── resources/                      
-|-- dataset_collection_preparation
+|-- dataset_collection_preparation  # dataset collection and preparation with human-in-loop
 ├── src/
 │   └── trpo.py                     # TRPO algorithm implementation
 ├── utils/
