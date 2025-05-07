@@ -1,7 +1,10 @@
 # Tennis-Shot-trajectory-modelling-GAIL
 
+### Projectory structure
+
 ```
 Tennis-Shot-trajectory-modelling-GALL/
+|-- config                          #contain training and inferencing config file
 ├── dataset/
 │   ├── data_prep.py                # TennisTrajectoryDataset class
 │   └── dataloader.py               # DataLoader configuration
@@ -21,3 +24,33 @@ Tennis-Shot-trajectory-modelling-GALL/
 |-- ball_data.csv 
 └── README.md
 ```
+
+
+### Usage
+
+To create virtual env to work with:
+
+
+```
+conda create -n tennis_gail310 python=3.10
+pip install -r requirements.txt
+```
+
+
+To **train** the model with default configurations,
+Run
+```
+python main.py
+```
+
+To **infer** on trained model:
+ ```
+ python infer.py
+ ```
+
+ ### Dataset:
+ [Training:validation:testing data](ball_data.csv)
+
+
+ ## Model weights:
+ [best model weights](https://drive.google.com/drive/folders/10Pmu1nzGWAoue5W1C-eEd5q11JWEs37m?usp=sharing)
